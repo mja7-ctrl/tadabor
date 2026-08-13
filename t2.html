@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<style>
+    @page {
+        size: A4;
+        margin: 18mm 15mm 18mm 15mm;
+        @bottom-left {
+            content: "بخش دوم: تیم رسانه و ترویج (مخاطب عام)";
+            font-family: 'B Nazanin', 'Vazirmatn', 'Tahoma', sans-serif;
+            font-size: 8pt;
+            color: #718096;
+        }
+        @bottom-right {
+            content: "صفحه " counter(page) " از " counter(pages);
+            font-family: 'B Nazanin', 'Vazirmatn', 'Tahoma', sans-serif;
+            font-size: 8pt;
+            color: #718096;
+        }
+    }
+    
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Vazirmatn', 'B Nazanin', 'Tahoma', sans-serif;
+        color: #2d3748;
+        line-height: 1.8;
+        font-size: 10pt;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-card {
+        background: linear-gradient(135deg, #dd6b20 0%, #c05621 100%);
+        color: #ffffff;
+        padding: 25px 30px;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .header-card h1 {
+        font-size: 18pt;
+        margin: 0 0 10px 0;
+        color: #ffffff;
+        font-weight: 700;
+        border: none;
+        padding: 0;
+    }
+
+    .header-card .subtitle {
+        font-size: 11pt;
+        color: #feebc8;
+        margin: 0;
+        opacity: 0.95;
+    }
+
+    .meta-grid {
+        display: table;
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .meta-item {
+        display: table-cell;
+        width: 33.33%;
+        font-size: 9pt;
+        color: #fffaf0;
+    }
+
+    .section-title {
+        color: #9c4221;
+        font-size: 13pt;
+        font-weight: bold;
+        border-right: 4px solid #dd6b20;
+        padding-right: 10px;
+        margin-top: 25px;
+        margin-bottom: 12px;
+        page-break-after: avoid;
+    }
+
+    .subsection-title {
+        color: #c05621;
+        font-size: 11pt;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        page-break-after: avoid;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .callout-box {
+        background-color: #fffaf0;
+        border-right: 3px solid #dd6b20;
+        padding: 12px 15px;
+        border-radius: 4px;
+        margin: 12px 0;
+        page-break-inside: avoid;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        page-break-inside: avoid;
+    }
+
+    th, td {
+        border: 1px solid #e2e8f0;
+        padding: 8px 10px;
+        text-align: right;
+        font-size: 9.5pt;
+    }
+
+    th {
+        background-color: #dd6b20;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f7fafc;
+    }
+
+    .script-box {
+        background-color: #f7fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 12px 15px;
+        margin: 12px 0;
+        page-break-inside: avoid;
+    }
+
+    .prompt-block {
+        background-color: #1a202c;
+        color: #63b3ed;
+        padding: 12px;
+        border-radius: 6px;
+        font-family: monospace;
+        font-size: 8.5pt;
+        direction: ltr;
+        text-align: left;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        margin: 8px 0;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h1>سبد فرآورده‌های جلسات تدبر - پوشه دوم</h1>
+        <div class="subtitle">ویژه تیم رسانه و ترویج (مخاطب عام، جذاب و رسانه‌ای)</div>
+        <div class="meta-grid">
+            <div class="meta-item"><strong>موضوع:</strong> روند، ماهیت و نهاد پیشرفت</div>
+            <div class="meta-item"><strong>خروجی:</strong> سناریوها، پرامپت‌ها و اسلایدها</div>
+            <div class="meta-item"><strong>هدف:</strong> انتشار در شبکه‌های اجتماعی و رسانه</div>
+        </div>
+    </div>
+
+    <!-- 1. Golden Topics -->
+    <div class="section-title">۱. مباحث طلایی (Golden Topic)</div>
+    <div class="callout-box">
+        <div class="subsection-title" style="margin-top:0;">💡 مبحث طلایی: «چرا شکست‌ها در جبهه حق، پایان راه نیستند؟»</div>
+        <p>
+            در تحلیل‌های سطحی از پیشرفت، پیروزی با دستاوردهای مادی و ملموس سنجیده می‌شود و هرگونه افت یا شکست، به معنی نابودی تلقی می‌گردد. اما در الگوی اسلامی-قرآنی، پیشرفت بر مدار **«قابلیت»** شکل می‌گیرد نه صرفاً دستاورد. دستاوردها متزلزل و دارای افت مقطعی هستند، اما قابلیت (توان بازتولید و Know-how) سرمایه پایدار جامعه است. سنت الهی «ابتلا» با وارد کردن فشار و مسائل سخت، قابلیت‌های جدیدی را در جبهه حق می‌سازد و سطح مسئله را ارتقا می‌دهد؛ از این رو شکست‌های مقطعی (مانند احد) نه تنها مایه فروپاشی نیستند، بلکه مرحله‌ای ضروری برای تعمیق قابلیت‌ها جهت جهش‌های بزرگتر تاریخی‌اند.
+        </p>
+    </div>
+
+    <!-- 2. Short Podcast Scripts -->
+    <div class="section-title">۲. سناریوی پادکست‌های ۳۰ ثانیه‌ای (Short Clips / Reels / Shorts)</div>
+    
+    <div class="script-box">
+        <div class="subsection-title" style="margin-top:0;">🎙️ سناریو ۱: «دستاورد داری یا قابلیت؟»</div>
+        <p><strong>افکت صوتی:</strong> صدای تکان‌دهنده ساعت/ضربان + موسیقی هیجانی ملایم</p>
+        <p><strong>متن گوینده:</strong> تا حالا فکر کردی چرا بعضی شرکت‌ها یا آدما با اولین بحران تمام دارایی‌شونو از دست میدن و نابود میشن، اما بعضی‌های دیگه از صفر دوباره می‌سازنش؟ راز این تفاوت توی یک کلمه‌ست: **«قابلیت»**! دستاورد مثل پول تو جیبه، ممکنه تموم بشه؛ اما قابلیت یعنی فرمول ساختن اون پول! قرآن میگه نه با از دست رفتن دستاوردا ناامید شو، نه به داشتنش غرور ورز. اصل، اون توانایی درونیه که کسی نمی‌تونه ازت بگیره.</p>
+    </div>
+
+    <div class="script-box">
+        <div class="subsection-title" style="margin-top:0;">🎙️ سناریو ۲: «پشت پرده سنت ابتلا»</div>
+        <p><strong>افکت صوتی:</strong> صدای باد و طوفان به همراه موسیقی حماسی</p>
+        <p><strong>متن گوینده:</strong> چرا خدا اجازه میده جبهه حق گاهی شکست بخوره؟ مگه وعده نصرت نداده؟ جوابش توی سوره آل‌عمرانه: «شکست در احد، پایان نبود؛ یک ابتلا بود برای ارتقای قابلیت!» خدا با مسائل سخت، توانایی‌های پنهان مومنان رو بیدار میکنه. افت‌های مقطعی، شکست نیستن؛ زنگ بیداری برای رفتن به مرحله بعدی پیشرفت هستن!</p>
+    </div>
+
+    <!-- 3. Posters & Graphics Prompts -->
+    <div class="section-title">۳. طرح پوستر، کارت‌نوشته و پرامپت‌های گرافیکی (AI Graphic Prompts)</div>
+    
+    <div class="subsection-title">🖼️ پوستر ۱: «جمله طلایی - دستاورد و قابلیت»</div>
+    <p><strong>متن کارت‌نوشته:</strong> «دستاوردها می‌آیند و می‌روند؛ آنچه جامعه را روی پا نگه می‌دارد، "قابلیتِ" بازتولید است.»</p>
+    <p><strong>پرامپت هوش مصنوعی (Midjourney / DALL-E 3):</strong></p>
+    <div class="prompt-block">A conceptual digital artwork showing a glowing golden blueprint floating above a crumbling stone structure, representing the indestructible inner capability vs temporary physical achievement. Persian typography integrated softly, cinematic lighting, 8k resolution, minimalist modern style, warm amber and navy blue tones --ar 4:5 --v 6.0</div>
+
+    <div class="subsection-title">🖼️ پوستر ۲: «کارت‌نوشته تدبر آیه ۲۳ سوره حدید»</div>
+    <p><strong>متن کارت‌نوشته:</strong> «لِکَیْلَا تَأْسَوْا عَلَى مَا فاتَکُمْ... نه بر گذشته حسرت بخور، نه به داشته‌هایت مغرور شو؛ در مسیر پیشرفت، چشم به قابلیت‌ها بدوز.»</p>
+    <p><strong>پرامپت هوش مصنوعی:</strong></p>
+    <div class="prompt-block">A powerful visual representation of resilience, a green plant sprouting through a cracked desert soil with subtle Quranic calligraphy watermark in the sky, serene sunlight filtering through clouds, high-end editorial photo, clean design space for text overlay --ar 1:1 --style raw</div>
+
+    <!-- 4. Presentation Slides -->
+    <div class="section-title">۴. متن اسلایدهای ارائه (Presentation Slides - PPT)</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">شماره اسلاید</th>
+                <th style="width: 25%;">عنوان اسلاید</th>
+                <th style="width: 60%;">محتوا و نکات کلیدی</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>اسلاید ۱</strong></td>
+                <td><strong>عنوان اصلی</strong></td>
+                <td><strong>بازخوانی روند پیشرفت:</strong> از دستاوردگرایی سطحی تا قابلیت‌سازی پایدار بر اساس سنن الهی.</td>
+            </tr>
+            <tr>
+                <td><strong>اسلاید ۲</strong></td>
+                <td><strong>مفهوم‌شناسی</strong></td>
+                <td>• <strong>دستاورد:</strong> خروجی ملموس، مقطعی و دارای نوسان.<br>• <strong>قابلیت:</strong> Know-how، دانش نهادینه‌شده و توان بازتولید مستمر.</td>
+            </tr>
+            <tr>
+                <td><strong>اسلاید ۳</strong></td>
+                <td><strong>دو سنت الهی</strong></td>
+                <td>• <strong>سنت ابتلا:</strong> ایجاد فشار و مسئله برای شکوفایی قابلیت‌ها.<br>• <strong>سنت تزیین:</strong> دلخوشی به ظواهر بدون تعمیق درونی (مقدمه انحطاط).</td>
+            </tr>
+            <tr>
+                <td><strong>اسلاید ۴</strong></td>
+                <td><strong>منطق قرآن در شکست</strong></td>
+                <td>• تحلیل آیه ۲۳ حدید (نه تاسف، نه غرور).<br>• تحلیل آیات آل‌عمران (تداول ایام و خالص‌سازی قابلیت‌ها).</td>
+            </tr>
+            <tr>
+                <td><strong>اسلاید ۵</strong></td>
+                <td><strong>نتیجه‌گیری مدیریتی</strong></td>
+                <td>• عدم ترس از افت‌های مقطعی.<br>• تمرکز بر زیرساخت‌های دانشی و قابلیت‌سازی در سیاست‌گذاری.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 5. Motion Graphics Script -->
+    <div class="section-title">۵. سناریو و استوری‌بورد موشن‌گرافیک (۲ دقیقه‌ای)</div>
+    <p><strong>عنوان:</strong> سفر پیشرفت؛ راز پایداری جوامع | <strong>زمان:</strong> ۱۲۰ ثانیه</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">بخش / زمان</th>
+                <th style="width: 45%;">تصویر / افکت بصری (Visual Storyboard)</th>
+                <th style="width: 40%;">صدا / گوینده (Audio Script)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>بخش ۱<br>(۰-۳۰ ثانیه)</strong></td>
+                <td>تصویر دو شهر: یکی مجلل اما کاغذی که با یک باد فرومی‌ریزد، و دیگری شهری متکی بر پی‌های عمیق فولادی.</td>
+                <td>«چرا بعضی جوامع با اولین بحران نابود میشن؟ چون همه چیزشون روی "دستاورد ظاهری" بنا شده بود، نه "قابلیت درونی".»</td>
+            </tr>
+            <tr>
+                <td><strong>بخش ۲<br>(۳۰-۷۰ ثانیه)</strong></td>
+                <td>نمایش یک چرخ‌دنده بزرگ (Know-how) که حتی با تخریب ساختمان‌ها، دوباره شروع به ساختن شهر می‌کند. نمایش نمادین سنت ابتلا با نورهایی که از دل چالش‌ها بیرون می‌زنند.</td>
+                <td>«قابلیت یعنی دانش و توان بازتولید. خدا در سنت ابتلا، ما رو با چالش‌ها روبه‌رو میکنه تا چرخ‌دنده‌های قابلیت ما قوی‌تر بشه.»</td>
+            </tr>
+            <tr>
+                <td><strong>بخش ۳<br>(۷۰-۱۲۰ ثانیه)</strong></td>
+                <td>ظهور آیه «لِکَیْلَا تَأْسَوْا...» با خط معلی زیبا و نورانی، تبدیل گرافیکی نوسانات به یک نمودار صعودی پایدار.</td>
+                <td>«قرآن آموزه پیشرفته‌ای داره: نه با شکست ناامید شو، نه با موفقیت مغرور. نگاهت رو ببر روی ساخته شدن قابلیت‌ها!»</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
